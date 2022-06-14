@@ -1,0 +1,304 @@
+:root {
+	/* Text color */
+	--text-cl: #555555;
+	--text-cl-second: #303030;
+	--sub-titel-cl: rgba(157, 164, 189, 0.6);
+	--slogan-hero: #9da4bd;
+	--titel-hero-cl: #ffffff;
+	--accent-cl: #ff6c00;
+	--button-text: #ffffff;
+	--link-cl-ligth: #ffffff;
+
+	/* BG color */
+
+	--bgc-main: #ffffff;
+	--bgc-second: #f7f7f7;
+	--bgc-contact: #191c26;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	color: var(--text-cl);
+	letter-spacing: 0.02em;
+	background-color: var(--bgc-main);
+}
+
+.link {
+	text-decoration: none;
+}
+
+.list {
+	list-style: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/* Header */
+
+.header {
+	background-color: var(--bgc-contact);
+}
+
+.header-link {
+	color: var(--link-cl-ligth);
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.1em;
+}
+
+.header-link:hover,
+.header-link:focus {
+	color: var(--accent-cl);
+}
+
+.button {
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	background-color: transparent;
+	cursor: pointer;
+	border: 1px solid var(--accent-cl);
+	border-radius: 25px;
+	width: 160px;
+	height: 40px;
+}
+
+.btn-ligth {
+	color: var(--button-text);
+}
+
+.btn-dark {
+	color: var(--text-cl);
+}
+
+.button:hover,
+.button:focus {
+	background-color: var(--accent-cl);
+}
+
+.link-hero {
+	color: var(--text-cl-second);
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	transform: rotate(-90deg);
+}
+
+.link-hero:hover,
+.link-hero:focus {
+	color: var(--accent-cl);
+}
+
+/* Hero section */
+
+.hero.section {
+	background-color: var(--bgc-contact);
+}
+
+.socials-hero {
+	background-color: var(--bgc-main);
+}
+
+.sub-titel {
+	color: var(--sub-titel-cl);
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.titel-hero {
+	color: var(--titel-hero-cl);
+	font-family: "Raleway", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 1.18;
+	letter-spacing: 0.05em;
+}
+
+.slogan-hero {
+	font-size: 18px;
+	line-height: 1.63;
+	color: var(--slogan-hero);
+}
+
+.btn-slider {
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.1em;
+	background-color: transparent;
+	border: none;
+}
+
+.back {
+	color: rgba(157, 164, 189, 0.6);
+}
+
+.forward {
+	text-align: right;
+	color: var(--button-text);
+}
+
+.btn-slider:focus,
+.btn-slider:hover {
+	border: none;
+}
+
+/* About */
+
+.subject {
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.17;
+	letter-spacing: 0.05em;
+	color: var(--text-cl-second);
+}
+
+.slogan {
+	font-size: 18px;
+	line-height: 1.67;
+}
+
+.text {
+	font-size: 14px;
+	line-height: 1.86;
+}
+
+/* Price */
+.section-price {
+	background-color: var(--bgc-contact);
+}
+
+.section-price > .subject {
+	color: var(--titel-hero-cl);
+}
+
+.item-price {
+	color: var(--slogan-hero);
+	font-size: 18px;
+	line-height: 1.67;
+}
+/* Benefits */
+
+.item-benefist {
+	background-color: var(--bgc-second);
+}
+.item-benefist > .namber {
+	font-weight: 700;
+	font-size: 42px;
+	line-height: calc(57 / 42);
+	text-align: center;
+	letter-spacing: 0.05em;
+	color: var(--text-cl-second);
+}
+
+.item-benefist > .plus {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1, 38;
+	text-align: center;
+	color: var(--accent-cl);
+}
+
+.item-benefist > .description {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	text-align: center;
+	color: var(--text-cl-second);
+}
+
+/* Team */
+
+.section-team {
+	background-color: var(--bgc-second);
+}
+
+.section-team .name {
+	font-size: 18px;
+	line-height: 1.39;
+	text-align: center;
+	color: var(--text-cl-second);
+}
+
+.section-team .position {
+	color: var(--accent-cl);
+	font-size: 14px;
+	line-height: 1.38;
+	text-align: center;
+}
+
+/* Contacts */
+
+.section-contacts {
+	background-color: var(--bgc-contact);
+}
+
+.section-contacts .subject {
+	color: var(--titel-hero-cl);
+}
+
+.section-contacts .subject.record {
+	opacity: 0.6;
+}
+
+.section-contacts .link {
+	color: var(--slogan-hero);
+	font-size: 18px;
+	line-height: 1.67;
+	font-style: normal;
+}
+
+.section-contacts .link:hover,
+.section-contacts .link:focus {
+	color: var(--accent-cl);
+}
+
+.desc {
+	color: var(--titel-hero-cl);
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.desc-time {
+	color: var(--slogan-hero);
+	font-size: 18px;
+	line-height: 1.67;
+}
+
+.link-footer {
+	color: var(--text-cl-second);
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	transform: rotate(-90deg);
+}
+
+.link-footer:hover,
+.link-footer:focus {
+	color: var(--accent-cl);
+}
