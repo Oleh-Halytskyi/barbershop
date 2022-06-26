@@ -45,6 +45,7 @@ img {
 
 .link {
 	text-decoration: none;
+	color: inherit;
 }
 
 .list {
@@ -297,7 +298,14 @@ img {
 
 /* Price */
 .section-price {
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+
 	background-color: var(--bgc-contact);
+	background-image: url(../images/price/price-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .price-sub {
@@ -313,18 +321,38 @@ img {
 	flex-basis: 585px;
 }
 
+.price-list:first-child {
+	background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.price-list:last-child {
+	background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
 .price-list .list {
 	padding: 30px 40px;
-	background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
 .item-price {
 	display: flex;
-	justify-content: space-between;
+	align-items: baseline;
+	gap: 6px;
 
 	color: var(--slogan-hero);
 	font-size: 18px;
 	line-height: 1.67;
+}
+
+.item-price::before {
+	content: "";
+	display: inline-block;
+	flex-grow: 1;
+	height: 1px;
+	background-color: rgba(157, 164, 189, 0.12);
+}
+
+.item-price-desc {
+	order: -1;
 }
 
 .item-price:not(:last-child) {
@@ -410,6 +438,39 @@ img {
 	text-align: center;
 }
 
+.social-list {
+	display: flex;
+	justify-content: center;
+}
+
+.social-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+
+	color: var(--text-cl-second);
+	background-color: var(--bgc-main);
+}
+
+.list-items:not(:last-child) {
+	margin-right: 10px;
+}
+
+.social-icon {
+	width: 20px;
+	height: 20px;
+	fill: currentColor;
+}
+
+.social-item:hover,
+.social-item:focus {
+	color: var(--accent-cl);
+}
+
 /* <!-- Секція Portfolio --> */
 
 .portfolio {
@@ -424,6 +485,10 @@ img {
 
 .section-contacts {
 	background-color: var(--bgc-contact);
+	background-image: url(../images/contacts/bg-contact.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top 50% left calc(50% + 312px);
 }
 
 .address {
@@ -440,6 +505,20 @@ img {
 
 .address-item:last-child {
 	margin-bottom: 0;
+}
+
+.address-item .link {
+	display: flex;
+	align-items: center;
+}
+
+.address-icon {
+	margin-right: 16px;
+
+	width: 24px;
+	height: 24px;
+	stroke: currentColor;
+	fill: none;
 }
 
 .section-contacts .subject {
